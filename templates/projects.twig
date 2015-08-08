@@ -1,0 +1,15 @@
+{% extends 'main.twig' %}
+
+{% block active %}
+  <li><a href="/">Home</a></li>
+  <li><a href="about">About</a></li>
+  <li><a href="events">Events</a></li>
+  <li><a href="news">News</a></li>
+  <li class="active"><a href="projects">Projects</a></li>
+  <li><a href="contact">Contact</a></li>
+  <li class="has-form">
+    <input id="event-search" type="text" placeholder="Search"></li>
+{% endblock active %}
+{% block content %}
+<h1>Projects go here!</h1>
+{% endblock content %}

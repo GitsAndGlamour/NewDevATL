@@ -1,0 +1,16 @@
+{
+    "name": "gitsandglamour/newdevatl",
+    "description": "resource guide for beginner-friendly dev events around the Atlanta area.",
+    "authors": [
+        {
+            "name": "Omie Walls",
+            "email": "orwalls@uwm.edu"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.15",
+        "slim/slim": "^2.6",
+        "twig/twig": "^1.19",
+        "slim/slim-skeleton": "^2.1"
+    }
+}

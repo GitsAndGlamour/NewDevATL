@@ -1,0 +1,90 @@
+{% extends 'main.twig' %}
+
+{% block active %}
+  <li><a href="/">Home</a></li>
+  <li><a href="about">About</a></li>
+  <li class="active"><a href="events">Events</a></li>
+  <li><a href="news">News</a></li>
+  <li><a href="projects">Projects</a></li>
+  <li><a href="contact">Contact</a></li>
+  <li class="has-form">
+    <input id="event-search" type="text" placeholder="Search"></li>
+{% endblock active %}
+{% block content %}
+    <h1 class="columns"> Upcoming Events</h2>
+      <h2 class="columns">
+        <small>A resource guide for beginner-friendly tech events around Atlanta</small>
+      </h2>
+      <section class="events">
+
+
+        <div class="row event-row">
+
+          <div class="small-12 large-4 columns">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text"> Free Code Camp Atlanta meetup </h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">Saturday July 18, 2015 at 10 AM</p>
+                <p class="address">
+                  <span class="name">Starbucks at The Prado Shopping Center</span>
+                  <span class="street-address"> 5610 Roswell Rd</span>
+                  <span class="region">Sandy Springs, GA</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="https://www.facebook.com/groups/free.code.camp.atlanta/815262645189979/">more info</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-12 large-4 columns">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text">ConnectJS Conference (must purchase tickets for event)</h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">October 16 - 17, 2015</p>
+                <p class="address">
+                  <span class="name">Cobb Galleria Center</span>
+                  <span class="street-address">2 Galleria Pkwy SE</span>
+                  <span class="region">Atlanta, GA 30339</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="http://connect-js.com/">more info</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="small-12 large-4 columns end">
+            <div class="event row">
+              <div class="columns event-title">
+                <h3 class="event-title-text"> HackATL </h3>
+              </div>
+              <div class="event-body small-12 columns">
+                <p class="date">October 16-18</p>
+                <p class="address">
+                  <span class="name">Emory University's Goizueta Business School</span>
+                  <span class="street-address">1300 Clifton Rd</span>
+                  <span class="region">Atlanta, GA 30322</span>
+                </p>
+              </div>
+
+              <div class="info columns">
+                <span class="more-info"><a href="http://hackatl.org/">more info</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="small-12 columns">
+          <p class="add-event">
+            [<a href="https://github.com/LeahW/NewDevATL">Create an issue</a> for NewDevATL to list your event]
+          </p>
+        </div>
+      </section>
+ {% endblock content %}
